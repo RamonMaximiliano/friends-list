@@ -25,3 +25,14 @@ function App() {
 }
 
 export default App;
+
+
+
+/* 
+
+7:50 min
+https://www.youtube.com/watch?v=xuSoqDEkH90&list=PLnHJACx3NwAe5XQDk9xLgym7FF8Q4FYW7&index=2&ab_channel=CodingAddict
+
+*/
+
+
