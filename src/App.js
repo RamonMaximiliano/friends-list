@@ -1,18 +1,24 @@
 import React, { startTransition } from "react";
 import { PersonList } from "./components/PersonList/PersonList";
+import { New } from "./components/New/New";
 import "./App.css";
 import { createContext } from "react";
-import {BrowserRouter, Route, Routes} from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 export const MainContext = createContext("");
 
 const App = () => {
+
+
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<PersonList />} />
-      </Routes>
-    </BrowserRouter>
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<PersonList />} />
+          <Route path="/page1" element={<New />} />
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 };
 
