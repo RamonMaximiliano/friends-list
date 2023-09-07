@@ -1,7 +1,17 @@
-.linkButton{
-    width:10%;
-    color:white;
-    background-color: blue;
-    
+.new-button {
+    max-width: 100px;
+    color: white;
+    background-color: rgb(94, 94, 224);
+    padding: 10px;
+    border-radius: 10px;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: -20px;
+}
 
+.new-button-link {
+    color: white;
+    text-decoration: none;
 }

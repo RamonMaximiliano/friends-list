@@ -5,27 +5,23 @@ import { PersonList } from '../PersonList/PersonList';
 export const New = () => {
   return (
     <>
-      <p>Testinbg</p>
-      <p>
-        <Link to="/" element={<PersonList />}>Contacts List</Link>
+      <p class="new-button">
+        <Link to="/" element={<PersonList />} class="new-button-link">Contacts List</Link>
       </p>
+      <div class="main-new">
+        <div>
+          <label for="name">Name:</label><br />
+          <input type="text" name="name" id="name" />
+        </div>
+        <div>
+          <label for="job">Job:</label><br />
+          <input type="text" name="job" id="job" />
+        </div>
+        <div>
+          <input type="button" name="Add" id="Add" value="Add Contact" />
+        </div>
+      </div>
     </>
-  )
+  );
 };
 
-/* 
-
-  import './styles.css';
-
-export const Person = () =>{
-  const picture = "https://randomuser.me/api/portraits/thumb/men/65.jpg"
-
-    return (
-      <div class="person">
-          <img src={picture} alt="Profile picture" class="image"/>      
-          <p class="text">Name</p>
-          <p class="text">Job</p>
-      </div>
-    );
-  };
- */

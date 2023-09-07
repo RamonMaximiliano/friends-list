@@ -1,0 +1,31 @@
+.main-new {
+    background-color: rgb(219, 219, 219);
+    max-width: 20%;
+    height: 150px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+.new-button {
+    max-width: 100px;
+    color: white;
+    background-color: rgb(94, 94, 224);
+    padding: 10px;
+    border-radius: 10px;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: -20px;
+}
+
+
+.new-button-link {
+    color: white;
+    text-decoration: none;
+}

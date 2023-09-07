@@ -2,13 +2,9 @@ import React, { startTransition } from "react";
 import { PersonList } from "./components/PersonList/PersonList";
 import { New } from "./components/New/New";
 import "./App.css";
-import { createContext } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-export const MainContext = createContext("");
-
 const App = () => {
-
 
   return (
     <>
@@ -25,9 +21,6 @@ const App = () => {
 export default App;
 
 /* 
-
-19:00 min
-https://www.youtube.com/watch?v=xuSoqDEkH90&list=PLnHJACx3NwAe5XQDk9xLgym7FF8Q4FYW7&index=2&ab_channel=CodingAddict
 
 
 Person image:
