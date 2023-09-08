@@ -24,8 +24,18 @@
     margin-bottom: -20px;
 }
 
-
 .new-button-link {
     color: white;
     text-decoration: none;
+}
+
+#Add{
+    margin-top:30px;
+    width:175px;
+    height:30px;
+    cursor:pointer;
+    background-color: rgb(62, 161, 62);
+    border:none;
+    color:white;
+    border-radius: 5px;
 }
