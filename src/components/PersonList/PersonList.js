@@ -7,8 +7,8 @@ import { New } from "../New/New";
 export const PersonList = () => {
   return (
     <>
-      <p class="new-button">
-        <Link to="/page1" element={<New />} class="new-button-link">New contact</Link>
+      <p className="new-button">
+        <Link to="/page1" element={<New />} className="new-button-link">New contact</Link>
       </p>
       <Person />
     </>

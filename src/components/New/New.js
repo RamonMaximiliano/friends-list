@@ -1,33 +1,15 @@
 import './styles.css';
 import { Link } from 'react-router-dom';
 import { PersonList } from '../PersonList/PersonList';
-import { useState } from 'react';
+import { useContext } from 'react';
+import { MainContext } from '../Context/Context';
 
 export const New = () => {
-  let [contactName, setContactName] = useState('');
-  let [contactJob, setContactJob] = useState('');
-
-function setContactInfo() {
-
-
-  if(contactName == ''){
-    window.alert("Please provide the contact name")
-  } else if (contactJob == ''){
-    window.alert("Please provide the contact job")
-  } else {
-    let newContact = {
-    name: contactName,
-    Job: contactJob
-  }
-  console.log(newContact)
-  setContactName('')
-  setContactJob('')
-  }
-};
+  const {setContactName, setContactJob,contactName,contactJob,setContactInfo} = useContext(MainContext);
 
   return (
     <>
-      <p class="new-button">
+      <p className="new-button">
         <Link to="/" element={<PersonList />} className="new-button-link">Contacts List</Link>
       </p>
       <div className="main-new">
