@@ -12,9 +12,9 @@ const App = () => {
 
   //function that creates single contact
   function setContactInfo() {
-    if(contactName == ''){
+    if (contactName == '') {
       window.alert("Please provide the contact name")
-    } else if (contactJob == ''){
+    } else if (contactJob == '') {
       window.alert("Please provide the contact job")
     } else {
 
@@ -22,23 +22,20 @@ const App = () => {
         name: contactName,
         job: contactJob
       }
-      setnewContList([...newContList, newDude]);   
+      setnewContList([...newContList, newDude]);
       setContactName('')
       setContactJob('')
     }
   };
- 
-  console.log(newContList)
-
 
   return (
     <>
       <BrowserRouter>
-      <MainContext.Provider value={{setContactName,setContactJob,contactName,contactJob,setContactInfo,newContList}}> 
-        <Routes>
-          <Route path="/" element={<PersonList />} />
-          <Route path="/page1" element={<New />} />
-        </Routes>
+        <MainContext.Provider value={{ setContactName, setContactJob, contactName, contactJob, setContactInfo, newContList }}>
+          <Routes>
+            <Route path="/" element={<PersonList />} />
+            <Route path="/page1" element={<New />} />
+          </Routes>
         </MainContext.Provider>
       </BrowserRouter>
     </>
@@ -54,9 +51,7 @@ Person image:
 https://randomuser.me/api/portraits/thumb/men/65.jpg
 
 
-- Create input component for the creation of people to then create the list of friends
-
-- Use two pages to practice context API, use a tag saying how many friends the list has, this will be the data shared between pages
+- Change the profile picture according to woman or man
 
 - Add a delete button to the profile of each
 
