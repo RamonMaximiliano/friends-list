@@ -1,4 +1,4 @@
-import React, { startTransition,useState } from "react";
+import React, { useState, useEffect } from "react";
 import { PersonList } from "./components/PersonList/PersonList";
 import { New } from "./components/New/New";
 import "./App.css";
@@ -8,7 +8,7 @@ import { MainContext } from "./components/Context/Context";
 const App = () => {
   let [contactName, setContactName] = useState('');
   let [contactJob, setContactJob] = useState('');
-
+  let [newContList, setnewContList] = useState([]);
 
   //function that creates single contact
   function setContactInfo() {
@@ -17,21 +17,24 @@ const App = () => {
     } else if (contactJob == ''){
       window.alert("Please provide the contact job")
     } else {
-      let newContact = {
-      name: contactName,
-      Job: contactJob
-    }
-    console.log(newContact)
-    setContactName('')
-    setContactJob('')
+
+      let newDude = {
+        name: contactName,
+        job: contactJob
+      }
+      setnewContList([...newContList, newDude]);   
+      setContactName('')
+      setContactJob('')
     }
   };
+ 
+  console.log(newContList)
 
 
   return (
     <>
       <BrowserRouter>
-      <MainContext.Provider value={{setContactName,setContactJob,contactName,contactJob,setContactInfo}}> 
+      <MainContext.Provider value={{setContactName,setContactJob,contactName,contactJob,setContactInfo,newContList}}> 
         <Routes>
           <Route path="/" element={<PersonList />} />
           <Route path="/page1" element={<New />} />
