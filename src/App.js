@@ -9,6 +9,9 @@ const App = () => {
   let [contactName, setContactName] = useState('');
   let [contactJob, setContactJob] = useState('');
   let [newContList, setnewContList] = useState([]);
+  let [sexGender, setSexgender] = useState('Man')
+
+
 
   //function that creates single contact
   function setContactInfo() {
@@ -31,7 +34,7 @@ const App = () => {
   return (
     <>
       <BrowserRouter>
-        <MainContext.Provider value={{ setContactName, setContactJob, contactName, contactJob, setContactInfo, newContList }}>
+        <MainContext.Provider value={{ setContactName, setContactJob, contactName, contactJob, setContactInfo, newContList, setSexgender,sexGender }}>
           <Routes>
             <Route path="/" element={<PersonList />} />
             <Route path="/page1" element={<New />} />
@@ -46,9 +49,11 @@ export default App;
 
 /* 
 
-
 Person image:
 https://randomuser.me/api/portraits/thumb/men/65.jpg
+
+https://randomuser.me/api/portraits/thumb/women/10.jpg
+
 
 
 - Change the profile picture according to woman or man

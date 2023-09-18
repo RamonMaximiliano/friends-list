@@ -1,7 +1,7 @@
 .main-new {
     background-color: rgb(219, 219, 219);
     max-width: 20%;
-    height: 150px;
+    height: 200px;
     padding-top: 20px;
     padding-bottom: 20px;
     margin: auto;
@@ -38,4 +38,15 @@
     border:none;
     color:white;
     border-radius: 5px;
+}
+
+
+.radios{
+    display:flex;
+    width:120px;
+    margin:auto;
+    justify-content: space-between;
+    margin-top:10px;
+    margin-bottom:-15px;
+
 }
