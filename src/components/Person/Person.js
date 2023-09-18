@@ -5,7 +5,7 @@ export const Person = (props) => {
 
   return (
     <div className="person">
-      <img src={picture} alt="Profile picture" className="image" />
+      <img src={props.picture} alt="Profile picture" className="image" />
       <p className="text">{props.name}</p>
       <p className="text">{props.job}</p>
     </div>
