@@ -42,14 +42,12 @@ const App = () => {
 
   return (
     <>
-      <BrowserRouter>
-        <MainContext.Provider value={{ setContactName, setContactJob, contactName, contactJob, setContactInfo, newContList, picture, setPicture, deleteContact }}>
-          <Routes>
-            <Route path="/" element={<PersonList />} />
-            <Route path="/page1" element={<New />} />
-          </Routes>
-        </MainContext.Provider>
-      </BrowserRouter>
+      <MainContext.Provider value={{ setContactName, setContactJob, contactName, contactJob, setContactInfo, newContList, picture, setPicture, deleteContact }}>
+        <Routes>
+          <Route path="/" element={<PersonList />} />
+          <Route path="/page1" element={<New />} />
+        </Routes>
+      </MainContext.Provider>
     </>
   );
 };
@@ -60,3 +58,22 @@ export default App;
 - Add a delete button to the profile of each
 
 */
+
+
+
+/* 
+return (
+  <>
+    <BrowserRouter>
+      <MainContext.Provider value={{ setContactName, setContactJob, contactName, contactJob, setContactInfo, newContList, picture, setPicture, deleteContact }}>
+        <Routes>
+          <Route path="/" element={<PersonList />} />
+          <Route path="/page1" element={<New />} />
+        </Routes>
+      </MainContext.Provider>
+    </BrowserRouter>
+  </>
+);
+};
+
+export default App; */
