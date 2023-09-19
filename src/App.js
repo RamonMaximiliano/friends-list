@@ -55,13 +55,6 @@ const App = () => {
 export default App;
 
 /* 
-- Add a delete button to the profile of each
-
-*/
-
-
-
-/* 
 return (
   <>
     <BrowserRouter>
