@@ -13,6 +13,7 @@ const App = () => {
 
   //function that creates single contact
   function setContactInfo() {
+    let uuid = crypto.randomUUID();
 
     if (contactName == '') {
       window.alert("Please provide the contact name")
@@ -23,7 +24,8 @@ const App = () => {
       let newDude = {
         name: contactName,
         job: contactJob,
-        pic: picture
+        pic: picture,
+        id: uuid
       }
       setnewContList([...newContList, newDude]);
       setContactName('')
@@ -31,10 +33,17 @@ const App = () => {
     }
   };
 
+  function deleteContact(e) {
+    let updatedContacts = newContList.filter(function (item) {
+      return item.id != e;
+    })
+    setnewContList(updatedContacts)
+  }
+
   return (
     <>
       <BrowserRouter>
-        <MainContext.Provider value={{ setContactName, setContactJob, contactName, contactJob, setContactInfo, newContList, picture,setPicture }}>
+        <MainContext.Provider value={{ setContactName, setContactJob, contactName, contactJob, setContactInfo, newContList, picture, setPicture, deleteContact }}>
           <Routes>
             <Route path="/" element={<PersonList />} />
             <Route path="/page1" element={<New />} />

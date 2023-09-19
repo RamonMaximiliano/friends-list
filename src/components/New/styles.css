@@ -14,7 +14,7 @@
 .new-button {
     max-width: 100px;
     color: white;
-    background-color: rgb(94, 94, 224);
+    background-color: rgb(46, 46, 194);
     padding: 10px;
     border-radius: 10px;
     margin: auto;
@@ -24,29 +24,36 @@
     margin-bottom: -20px;
 }
 
+.new-button:hover {
+    background-color: rgb(30, 30, 160);
+}
+
 .new-button-link {
     color: white;
     text-decoration: none;
 }
 
-#Add{
-    margin-top:30px;
-    width:175px;
-    height:30px;
-    cursor:pointer;
+#Add {
+    margin-top: 30px;
+    width: 175px;
+    height: 30px;
+    cursor: pointer;
     background-color: rgb(62, 161, 62);
-    border:none;
-    color:white;
+    border: none;
+    color: white;
     border-radius: 5px;
 }
 
+#Add:hover {
+    background-color: rgb(34, 117, 34);
+}
 
-.radios{
-    display:flex;
-    width:120px;
-    margin:auto;
+.radios {
+    display: flex;
+    width: 120px;
+    margin: auto;
     justify-content: space-between;
-    margin-top:10px;
-    margin-bottom:-15px;
+    margin-top: 10px;
+    margin-bottom: -15px;
 
 }

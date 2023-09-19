@@ -1,7 +1,7 @@
 .person {
     background-color: rgb(219, 219, 219);
     max-width: 20%;
-    height: 150px;
+    height: 175px;
     padding-top: 20px;
     padding-bottom: 20px;
     margin: auto;
@@ -20,8 +20,21 @@
 }
 
 .image {
-    border: solid 2px rgb(22, 148, 85);
     border-radius: 50%;
     width: 80px;
+}
 
+.deleteButton {
+    color: white;
+    font-size: 15px;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(172, 25, 25);
+    border: none;
+    border-radius: 20%;
+    cursor: pointer;
+}
+
+.deleteButton:hover {
+    background-color: rgb(99, 8, 8);
 }

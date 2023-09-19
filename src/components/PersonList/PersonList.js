@@ -28,7 +28,7 @@ export const PersonList = () => {
         <Link to="/page1" element={<New />} className="new-button-link">New contact</Link>
       </p>
       {
-        newContList.map(contact => <Person name={contact.name} job={contact.job} picture={contact.pic} />)
+        newContList.map(contact => <Person name={contact.name} job={contact.job} picture={contact.pic} id={contact.id} />)
       }
 
     </>
